@@ -71,10 +71,20 @@ public class Aluno {
     public Aluno() {
         disciplinaMatriculas = new ArrayList<>();
     }
+//
+//    public void matricularDiciplina(Disciplina disciplina) {
+//        if((disciplinaMatriculas.size()<5)&&(!disciplinaMatriculas.contains(disciplina))) ;
+//        disciplinaMatriculas .add(disciplina);
 
-    public void matricularDiciplina(Disciplina disciplina) {
-        disciplinaMatriculas .add(disciplina);
+    
+//    b. Um outro membro do grupo deverá baixar as atualizações feitas no item (a) e
+//    adicionar uma restrição de que um aluno não possa se matricular 
+//    duas vezes na mesma disciplina e que consiga se matricular no máximo em 5 disciplinas.
 
-    }
-
+    public void listarDisciplinas(Disciplina disciplina){
+ 
+          System.out.println(disciplinaMatriculas);
+                
+                }
 }
+
