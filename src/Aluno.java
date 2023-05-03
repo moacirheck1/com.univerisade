@@ -62,11 +62,7 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + ", disciplinaMatriculas=" + disciplinaMatriculas + '}';
     }
-    
-    public void listarDisciplinas(){
-        System.out.println(this.disciplinaMatriculas);
-        System.out.println("Faltam - " +(curso.getDisciplinas().size()-this.disciplinaMatriculas.size()));
-    }
+
 
     public Aluno() {
         disciplinaMatriculas = new ArrayList<>();
@@ -89,4 +85,4 @@ public class Aluno {
           System.out.println(disciplinaMatriculas);
                 
                 }
-}
+
