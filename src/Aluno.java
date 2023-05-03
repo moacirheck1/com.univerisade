@@ -62,19 +62,31 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + ", disciplinaMatriculas=" + disciplinaMatriculas + '}';
     }
-//a. Além disso, crie um método "matricularDisciplina" na classe "Aluno" que
-//    receba uma
-//referência para a classe "Disciplina" e adicione essa disciplina na 
-//    lista de disciplinas do
-////aluno.
+    
+    public void listarDisciplinas(){
+        System.out.println(this.disciplinaMatriculas);
+        System.out.println("Faltam - " +(curso.getDisciplinas().size()-this.disciplinaMatriculas.size()));
+    }
 
     public Aluno() {
         disciplinaMatriculas = new ArrayList<>();
     }
 
+
+
     public void matricularDiciplina(Disciplina disciplina) {
+        if ((disciplinaMatriculas.size()<5)&& (!disciplinaMatriculas.contains(disciplina))){
         disciplinaMatriculas .add(disciplina);
+        
+        }else{
+                System.out.println("Disciplina não pode ser adicionada!");
+                }
 
     }
 
+    public void listarDisciplinas(Disciplina disciplina){
+ 
+          System.out.println(disciplinaMatriculas);
+                
+                }
 }
