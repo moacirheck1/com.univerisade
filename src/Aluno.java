@@ -62,24 +62,23 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + ", disciplinaMatriculas=" + disciplinaMatriculas + '}';
     }
-//a. Além disso, crie um método "matricularDisciplina" na classe "Aluno" que
-//    receba uma
-//referência para a classe "Disciplina" e adicione essa disciplina na 
-//    lista de disciplinas do
-////aluno.
+
 
     public Aluno() {
         disciplinaMatriculas = new ArrayList<>();
     }
-//
-//    public void matricularDiciplina(Disciplina disciplina) {
-//        if((disciplinaMatriculas.size()<5)&&(!disciplinaMatriculas.contains(disciplina))) ;
-//        disciplinaMatriculas .add(disciplina);
 
-    
-//    b. Um outro membro do grupo deverá baixar as atualizações feitas no item (a) e
-//    adicionar uma restrição de que um aluno não possa se matricular 
-//    duas vezes na mesma disciplina e que consiga se matricular no máximo em 5 disciplinas.
+
+
+    public void matricularDiciplina(Disciplina disciplina) {
+        if ((disciplinaMatriculas.size()<5)&& (!disciplinaMatriculas.contains(disciplina))){
+        disciplinaMatriculas .add(disciplina);
+        
+        }else{
+                System.out.println("Disciplina não pode ser adicionada!");
+                }
+
+    }
 
     public void listarDisciplinas(Disciplina disciplina){
  
