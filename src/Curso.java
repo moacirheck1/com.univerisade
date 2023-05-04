@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -10,7 +11,7 @@ public class Curso {
     public Curso(int codigo, String nome, List<Disciplina> disciplinas) {
         this.codigo = codigo;
         this.nome = nome;
-        this.disciplinas = disciplinas;
+        this.disciplinas=new ArrayList<>();
     }
 
     public int getCodigo() {
