@@ -15,11 +15,9 @@ public class Aluno {
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
-<<<<<<< HEAD
+
         this.disciplinaMatriculas = new ArrayList<>();
-=======
-        disciplinaMatriculas = new ArrayList<>();
->>>>>>> 0c104b79249045501c8a518de15b5cc0010e2de7
+
     }
 
     public int getCodigo() {
@@ -66,47 +64,22 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + ", disciplinaMatriculas=" + disciplinaMatriculas + '}';
     }
-<<<<<<< HEAD
 
-    public void listarDisciplinas(){
+    public void listarDisciplinas() {
         System.out.println(this.disciplinaMatriculas);
-        System.out.println("Faltam " +(curso.getDisciplinas().size() - this.disciplinaMatriculas.size()));
+        System.out.println("Faltam " + (curso.getDisciplinas().size() - this.disciplinaMatriculas.size()));
     }
-  
-=======
->>>>>>> 0c104b79249045501c8a518de15b5cc0010e2de7
 
     public Aluno() {
         disciplinaMatriculas = new ArrayList<>();
     }
 
-  
-
-
-<<<<<<< HEAD
     public void matricularDiciplina(Disciplina disciplina) {
-        if ((disciplinaMatriculas.size()<5)&& (!disciplinaMatriculas.contains(disciplina))){
-        disciplinaMatriculas .add(disciplina);
+        if ((disciplinaMatriculas.size() < 5) && (!disciplinaMatriculas.contains(disciplina))) {
+            disciplinaMatriculas.add(disciplina);
 
-        }else{
+        } else {
             System.out.println("Disciplina não pode ser adicionada!");
         }
-=======
-    public void listarDisciplinas(Disciplina disciplina) {
->>>>>>> 0c104b79249045501c8a518de15b5cc0010e2de7
-
-        System.out.println(this.disciplinaMatriculas);
-        System.out.println("Faltam " + (curso.getDisciplinas().size() - this.disciplinaMatriculas.size()));
-
-<<<<<<< HEAD
-=======
-    public void listarDisciplinas(Disciplina disciplina){
- 
-          System.out.println(disciplinaMatriculas);
-                
-                }
-
-
     }
->>>>>>> 0c104b79249045501c8a518de15b5cc0010e2de7
 }
