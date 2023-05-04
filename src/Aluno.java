@@ -67,20 +67,20 @@ public class Aluno {
         disciplinaMatriculas = new ArrayList<>();
     }
 
-    public void matricularDiciplina(Disciplina disciplina) {
-        if ((disciplinaMatriculas.size() < 5) && (!disciplinaMatriculas.contains(disciplina))) {
-            disciplinaMatriculas.add(disciplina);
+  
 
-        } else {
-            System.out.println("Disciplina não pode ser adicionada!");
-        }
-
-    }
 
     public void listarDisciplinas(Disciplina disciplina) {
 
         System.out.println(this.disciplinaMatriculas);
         System.out.println("Faltam " + (curso.getDisciplinas().size() - this.disciplinaMatriculas.size()));
+
+    public void listarDisciplinas(Disciplina disciplina){
+ 
+          System.out.println(disciplinaMatriculas);
+                
+                }
+
 
     }
 }
