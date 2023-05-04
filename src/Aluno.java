@@ -10,12 +10,12 @@ public class Aluno {
     private Curso curso;
     private List<Disciplina> disciplinaMatriculas;
 
-    public Aluno(int codigo, String nome, String matricula, Curso curso, List<Disciplina> disciplinaMatriculas) {
+    public Aluno(int codigo, String nome, String matricula, Curso curso) {
         this.codigo = codigo;
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
-        this.disciplinaMatriculas = new ArrayList<>();
+        disciplinaMatriculas = new ArrayList<>();
     }
 
     public int getCodigo() {
