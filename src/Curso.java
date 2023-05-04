@@ -11,7 +11,7 @@ public class Curso {
     public Curso(int codigo, String nome, List<Disciplina> disciplinas) {
         this.codigo = codigo;
         this.nome = nome;
-        this.disciplinas=new ArrayList<>();
+        this.disciplinas= disciplinas;
     }
 
     public int getCodigo() {
